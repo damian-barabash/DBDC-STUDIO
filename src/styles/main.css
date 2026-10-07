@@ -4,7 +4,7 @@
   --ink-2: #2a2c31;
   --muted: #55575c;
   --line: #c4c4bf;
-  --accent: #ffb400;
+  --accent: #f47918;
   --white: #ffffff;
   --r-xl: 28px;
   --r-lg: 22px;
@@ -345,7 +345,7 @@ a.round:hover { background: var(--accent); color: var(--ink); transform: transla
   border-radius: var(--r-lg);
   color: var(--white);
   background:
-    radial-gradient(90% 60% at 100% 100%, rgba(255, 180, 0, 0.32), transparent 62%),
+    radial-gradient(90% 60% at 100% 100%, rgba(244, 121, 24, 0.32), transparent 62%),
     linear-gradient(160deg, #3b3d42 0%, #1b1c20 46%, #0c0d10 100%);
   overflow: hidden;
   isolation: isolate;
