@@ -19,7 +19,7 @@ for (const lang of (process.env.LANGS || 'en').split(',')) {
       page.on('console', (m) => m.type() === 'error' && errors.push(m.text()))
       await page.setViewport({ width: w, height: h, deviceScaleFactor: 1 })
       await page.evaluateOnNewDocument((l) => localStorage.setItem('dbdc.lang', l), lang)
-      await page.goto(base + path, { waitUntil: 'networkidle0' })
+      await page.goto(base + (lang === 'en' ? '' : `/${lang}`) + path, { waitUntil: 'networkidle0' })
       // прокрутка, чтобы сработало появление блоков и ленивые картинки
       await page.evaluate(async () => {
         for (let y = 0; y < document.body.scrollHeight; y += 500) {

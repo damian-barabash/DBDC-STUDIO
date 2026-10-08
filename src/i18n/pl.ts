@@ -2,9 +2,11 @@ import type { Dict } from './en'
 
 export const pl: Dict = {
   meta: {
-    title: 'DBDC Studio — studio tworzące aplikacje mobilne i gry',
+    title: 'DBDC Studio — tworzenie aplikacji mobilnych i gier',
     description:
-      'DBDC Studio to warszawski zespół, który tworzy aplikacje mobilne i gry od początku do końca: koncepcja, UI/UX, programowanie, testy i stały rozwój. Twórcy Ticket Flow, SAKE Control i CatMon.',
+      'Warszawskie studio tworzące aplikacje mobilne i gry od koncepcji po sklep: UI/UX, programowanie, testy. Twórcy Ticket Flow, SAKE Control i CatMon.',
+    privacyDescription:
+      'Jak DBDC Studio zbiera, wykorzystuje, udostępnia i chroni dane osobowe w swoich aplikacjach, grach i serwisach oraz jak skorzystać ze swoich praw.',
     privacyTitle: 'Polityka prywatności — DBDC Studio',
   },
   top: {
@@ -86,6 +88,8 @@ export const pl: Dict = {
     platforms: 'Platformy',
     languages: 'Języki',
     pricing: 'Cena',
+    shotAlt: 'zrzut ekranu strony',
+    mobileAlt: 'ekran mobilny',
     items: {
       ticketflow: {
         category: 'SaaS · Zarządzanie pracą',
@@ -132,6 +136,7 @@ export const pl: Dict = {
     legal: 'Informacje prawne',
     company: 'Dane firmy',
   },
+  notFound: { title: 'Nie znaleziono strony', text: 'Taki adres nie istnieje. Studio, nasze produkty i kontakt znajdziesz na stronie głównej.' },
   privacy: {
     title: 'Polityka prywatności',
     contents: 'Spis treści',

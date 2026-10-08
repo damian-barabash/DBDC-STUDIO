@@ -1,16 +1,16 @@
 import { Link } from 'react-router-dom'
-import { useT } from '../i18n'
+import { useLang } from '../i18n'
 import { COMPANY } from '../data/company'
 import { PRODUCTS } from '../data/products'
 import { Logo } from './Logo'
 
 export function Footer() {
-  const t = useT()
+  const { t, href } = useLang()
   return (
     <footer className="footer">
       <div className="wrap footer-in">
         <div className="footer-brand">
-          <Link to="/" className="brand">
+          <Link to={href('/')} className="brand">
             <span className="brand-mark"><Logo size={22} /></span>
             <span className="brand-name">{COMPANY.brand}</span>
           </Link>
@@ -20,10 +20,10 @@ export function Footer() {
 
         <div className="footer-col">
           <h4>{t.footer.studio}</h4>
-          <Link to="/#about">{t.tabs.about}</Link>
-          <Link to="/#approach">{t.tabs.approach}</Link>
-          <Link to="/#products">{t.tabs.products}</Link>
-          <Link to="/#contact">{t.tabs.contact}</Link>
+          <Link to={href('/#about')}>{t.tabs.about}</Link>
+          <Link to={href('/#approach')}>{t.tabs.approach}</Link>
+          <Link to={href('/#products')}>{t.tabs.products}</Link>
+          <Link to={href('/#contact')}>{t.tabs.contact}</Link>
         </div>
 
         <div className="footer-col">
@@ -44,7 +44,7 @@ export function Footer() {
       </div>
       <div className="wrap footer-bottom">
         <span>© {new Date().getFullYear()} {COMPANY.brand}. {t.footer.rights}</span>
-        <Link to="/privacy/">{t.actions.privacy}</Link>
+        <Link to={href('/privacy/')}>{t.actions.privacy}</Link>
       </div>
     </footer>
   )

@@ -1,8 +1,10 @@
 export const en = {
   meta: {
-    title: 'DBDC Studio — mobile app & game development studio',
+    title: 'DBDC Studio — Mobile App & Game Development Studio',
     description:
-      'DBDC Studio is a Warsaw-based team building mobile apps and games end to end: concept, UI/UX, engineering, testing and continuous refinement. Makers of Ticket Flow, SAKE Control and CatMon.',
+      'Warsaw studio building mobile apps and games end to end: concept, UI/UX, engineering, testing. Makers of Ticket Flow, SAKE Control and CatMon.',
+    privacyDescription:
+      'How DBDC Studio collects, uses, shares and protects personal data in its apps, games and websites, and how to exercise your rights.',
     privacyTitle: 'Privacy Policy — DBDC Studio',
   },
   top: {
@@ -84,6 +86,8 @@ export const en = {
     platforms: 'Platforms',
     languages: 'Languages',
     pricing: 'Pricing',
+    shotAlt: 'screenshot of the website',
+    mobileAlt: 'mobile screen',
     items: {
       ticketflow: {
         category: 'SaaS · Work management',
@@ -130,6 +134,7 @@ export const en = {
     legal: 'Legal',
     company: 'Company details',
   },
+  notFound: { title: 'Page not found', text: 'This address does not exist. The studio, our products and contacts are on the home page.' },
   privacy: {
     title: 'Privacy Policy',
     contents: 'Contents',

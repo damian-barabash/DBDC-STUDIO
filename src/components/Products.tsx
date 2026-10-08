@@ -19,13 +19,13 @@ export function Products() {
           const c = p.items[item.id]
           return (
             <article className={`product ${item.tone}`} key={item.id} data-rv>
-              <a className="product-media" href={item.url} target="_blank" rel="noopener" tabIndex={-1} aria-hidden="true">
+              <a className="product-media" href={item.url} target="_blank" rel="noopener" tabIndex={-1} aria-label={`${item.name} — ${item.domain}`}>
                 <span className="shot-desktop">
                   <span className="shot-bar"><i /><i /><i /><b>{item.domain}</b></span>
-                  <img src={item.desktop} alt="" loading="lazy" width={1600} height={1000} />
+                  <img src={item.desktop} alt={`${item.name} — ${c.tagline}: ${p.shotAlt} ${item.domain}`} loading="lazy" decoding="async" width={1600} height={1000} />
                 </span>
                 <span className="shot-mobile">
-                  <img src={item.mobile} alt="" loading="lazy" />
+                  <img src={item.mobile} alt={`${item.name} — ${p.mobileAlt}`} loading="lazy" decoding="async" width={390} height={844} />
                 </span>
               </a>
 
@@ -35,7 +35,7 @@ export function Products() {
                   <span className="product-n">{String(i + 1).padStart(2, '0')}</span>
                 </div>
                 <div className="product-name">
-                  <img src={item.logo} alt="" width={56} height={56} loading="lazy" />
+                  <img src={item.logo} alt={`${item.name} logo`} width={56} height={56} loading="lazy" decoding="async" />
                   <div>
                     <h3>{item.name}</h3>
                     <p>{c.tagline}</p>

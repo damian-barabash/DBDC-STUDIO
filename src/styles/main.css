@@ -112,6 +112,8 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 .langs { display: flex; gap: 6px; }
 .lang {
+  display: grid;
+  place-items: center;
   width: 36px;
   height: 36px;
   border-radius: 50%;
@@ -701,6 +703,11 @@ a.touch-card:hover { transform: translateY(-5px); box-shadow: 0 14px 0 -6px rgba
 .controller address { display: grid; gap: 3px; font-size: 16.5px; }
 .controller address strong { font-size: 19px; font-weight: 600; }
 .controller address a { justify-self: start; margin-top: 8px; font-weight: 600; border-bottom: 2px solid var(--accent); }
+
+/* ───────── 404 ───────── */
+.notfound { display: grid; gap: 16px; justify-items: start; padding-block: clamp(56px, 12vw, 140px); }
+.notfound h1 { font-size: clamp(36px, 6vw, 72px); font-weight: 600; line-height: 1.04; letter-spacing: -0.02em; }
+.notfound p { font-size: 18px; max-width: 46ch; color: var(--ink-2); }
 
 /* ───────── появление ───────── */
 .rv-on [data-rv] {

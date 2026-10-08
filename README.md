@@ -9,7 +9,7 @@ React 19 + Vite 7 + TypeScript, без бэкенда. Языки: EN / PL / RU.
 ```bash
 npm install
 npm run dev      # локальная разработка
-npm run build    # сборка в dist/ (+ копии index.html для /privacy/ и 404.html)
+npm run build    # сборка в dist/ + пререндер всех страниц в готовый HTML
 npm run preview  # просмотр сборки на :4173
 ```
 
@@ -30,6 +30,14 @@ GitHub Actions (`.github/workflows/deploy.yml`) собирает и публик
 1. Settings → Pages → Source: **GitHub Actions**.
 2. Settings → Pages → Custom domain: `dbdcstudio.pl` (файл `public/CNAME` уже в репозитории).
 3. DNS домена: четыре записи `A` на `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153` и `CNAME` для `www` на `damian-barabash.github.io`.
+
+## SEO
+
+- Язык живёт в адресе: `/` — английский, `/pl/`, `/ru/`. Переключатель в шапке — обычные ссылки.
+- `scripts/prerender.mjs` после сборки рендерит каждую страницу в статический HTML и собирает для неё `<head>`: title, description, canonical, hreflang, Open Graph, JSON-LD (Organization, WebSite, WebPage, список продуктов). Тексты берутся из `src/i18n/*` (`meta`).
+- Там же генерируются `sitemap.xml` и `404.html` (noindex). Новую страницу нужно добавить и в `src/App.tsx`, и в `scripts/prerender.mjs`.
+- `public/robots.txt`, `public/llms.txt`, `public/manifest.webmanifest` — статические.
+- После публикации: подтвердить домен в Google Search Console и Bing Webmaster Tools и отправить `https://dbdcstudio.pl/sitemap.xml`.
 
 ## Где что лежит
 

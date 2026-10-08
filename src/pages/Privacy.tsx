@@ -1,12 +1,12 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { useT } from '../i18n'
+import { useLang } from '../i18n'
 import { COMPANY } from '../data/company'
 import { PRIVACY, PRIVACY_INTRO } from '../data/privacy'
 import { Logo } from '../components/Logo'
 
 export function Privacy() {
-  const t = useT()
+  const { t, href } = useLang()
   useEffect(() => {
     document.title = t.meta.privacyTitle
   }, [t])
@@ -21,7 +21,7 @@ export function Privacy() {
       <div className="strip">
         <span className="strip-mark"><Logo size={18} /></span>
         <nav className="tabs">
-          <Link className="tab" to="/">← {t.actions.home}</Link>
+          <Link className="tab" to={href('/')}>← {t.actions.home}</Link>
           <span className="tab on">{t.privacy.title}</span>
         </nav>
       </div>

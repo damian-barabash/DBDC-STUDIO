@@ -2,9 +2,11 @@ import type { Dict } from './en'
 
 export const ru: Dict = {
   meta: {
-    title: 'DBDC Studio — студия разработки мобильных приложений и игр',
+    title: 'DBDC Studio — разработка мобильных приложений и игр',
     description:
-      'DBDC Studio — варшавская команда, которая делает мобильные приложения и игры целиком: концепция, UI/UX, разработка, тестирование и постоянное развитие. Авторы Ticket Flow, SAKE Control и CatMon.',
+      'Студия из Варшавы: разработка мобильных приложений и игр под ключ — концепция, UI/UX, код, тестирование. Авторы Ticket Flow, SAKE Control и CatMon.',
+    privacyDescription:
+      'Как DBDC Studio собирает, использует, передаёт и защищает персональные данные в своих приложениях, играх и на сайтах и как воспользоваться своими правами.',
     privacyTitle: 'Политика конфиденциальности — DBDC Studio',
   },
   top: {
@@ -86,6 +88,8 @@ export const ru: Dict = {
     platforms: 'Платформы',
     languages: 'Языки',
     pricing: 'Цена',
+    shotAlt: 'скриншот сайта',
+    mobileAlt: 'мобильный экран',
     items: {
       ticketflow: {
         category: 'SaaS · Управление задачами',
@@ -132,6 +136,7 @@ export const ru: Dict = {
     legal: 'Правовая информация',
     company: 'Реквизиты',
   },
+  notFound: { title: 'Страница не найдена', text: 'Такого адреса нет. Студия, наши продукты и контакты — на главной странице.' },
   privacy: {
     title: 'Политика конфиденциальности',
     contents: 'Содержание',

@@ -1,0 +1,19 @@
+# DBDC Studio
+
+> DBDC Studio is a mobile app and game development studio based in Warsaw, Poland. The team covers the full lifecycle: concept development, UI/UX implementation, software engineering, rigorous testing and continuous refinement. It builds for iOS, Android, web, macOS and Windows.
+
+Contact: dbdcstudio@gmail.com
+Legal entity: Maksym Yehorov Maksikon, ul. Zamiany 18 lok. 46, 02-786 Warszawa, Poland. NIP 9512594289, REGON 528375783.
+
+## Pages
+
+- [Home (English)](https://dbdcstudio.pl/): studio, approach, products, contact
+- [Strona główna (polski)](https://dbdcstudio.pl/pl/)
+- [Главная (русский)](https://dbdcstudio.pl/ru/)
+- [Privacy Policy](https://dbdcstudio.pl/privacy/)
+
+## Products
+
+- [Ticket Flow](https://ticketflow.pl/): a ticket system for clients and teams. A client or teammate creates a task with a photo and the team takes it from "New" to "Done". Statuses, threads, project versions, goals and deadlines. Web, iOS, Android, macOS, Windows. EN/PL/RU. 7 days free, then $12/month.
+- [SAKE Control System](https://sakecontrol.pl/): uptime monitoring for sites, databases and servers. Checks every minute, alerts within seconds, SSL and ports, latency charts, team access. EN/PL/RU. 7 days free, then $7/month.
+- [CatMon](https://catmongame.app/): a free mobile game for iOS and Android (coming soon). Photograph a real street cat and AI turns it into a unique collectible card. Live battles, tournaments, dungeons. No pay-to-win. Part of the project supports the Na Paluchu shelter in Warsaw.
